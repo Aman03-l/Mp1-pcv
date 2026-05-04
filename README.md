@@ -11,6 +11,12 @@ Citra input memiliki rentang intensitas yang sempit sehingga terlihat kusam. Tah
 ### Sharpening menggunakan Operator Laplacian
 Untuk mengatasi efek blur dan mempertegas kembali detail yang hilang selama proses denoising, diterapkan kernel Laplacian. Operasi konvolusi manual ini dilakukan untuk menonjolkan perbedaan gradien pada tepi objek. Hasil akhir dari tahap ini memberikan ketajaman yang lebih baik pada fitur-fitur halus dalam citra.
 
+## Hasil Perbandingan
+
+| Citra Sebelum (Noisy) | Citra Sesudah (Restored) |
+| :---: | :---: |
+| ![Before](lena_noisy.png) | ![After](lena_restored.png) |
+
 ### Hasil dan Analisis
 Berdasarkan hasil eksekusi program, kombinasi ketiga teknik tersebut berhasil meningkatkan kualitas citra secara signifikan. Filter median terbukti efektif menghilangkan bintik hitam dan putih sepenuhnya, sementara ekualisasi histogram berhasil mengembalikan kecerahan warna yang hilang.
 
